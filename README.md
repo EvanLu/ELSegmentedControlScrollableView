@@ -10,12 +10,12 @@ Easy way to use segmentedcontrol ineract with scrollview
 ```Objective-C
 
 ELSegmentedControl *segmentedControlScrollableView;
-    NSArray *items = [NSArray arrayWithObjects:@"view0", @"view1", @"view2", @"view3", nil];
-    NSMutableArray *contenViews = [NSMutableArray arrayWithObjects:view0, view1, view2, view3, nil];
-    segmentedControlScrollableView = [[ELSegmentedControl alloc] initWithItemsContentViews:items
-                                                                        delegateParentView:self.view
-                                                                              contentViews:contenViews];
-    [segmentedControlScrollableView setBottomStickColor:[UIColor blackColor]];
+NSArray *items = [NSArray arrayWithObjects:@"view0", @"view1", @"view2", @"view3", nil];
+NSMutableArray *contenViews = [NSMutableArray arrayWithObjects:view0, view1, view2, view3, nil];
+segmentedControlScrollableView = [[ELSegmentedControl alloc] initWithItemsContentViews:items
+                                                                    delegateParentView:self.view
+                                                                          contentViews:contenViews];
+[segmentedControlScrollableView setBottomStickColor:[UIColor blackColor]];
 ```
 
 Or see the "ViewController.m" for more detail
